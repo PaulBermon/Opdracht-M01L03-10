@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Mijn eerste HTML pagina</title>
+    <title>Contactformulier</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" />
 </head>
@@ -11,7 +11,7 @@
     <header>
         <div class="header-container border-color-containers">
             <h1>Welkom op mijn eerste HTML pagina</h1>
-            <h2>Dit is opdracht 10, Contactformulier</h2>
+            <h2>Contactformulier</h2>
         </div>
     </header>
 
@@ -34,13 +34,22 @@
     </nav>
 
     <main>
-        <div class="main-container border-color-containers">
-            <p>Hieronder vind je aantal dingen die ik mooi vind:</p>
-            <ul>
-                <li>Muziek</li>
-                <li>Een goede film</li>
-                <li>De natuur in met de hond</li>
-            </ul>
+        <div class="form-container border-color-containers">
+            <form name="contact" method="POST" data-netlify="true">
+                <p>
+                    <label>Naam:<input type="text" name="name" placeholder="Uw naam" /></label>
+                </p>
+                <p>
+                    <label>Email: <input type="email" name="email" placeholder="Uw e-mail" /></label>
+                </p>
+                <p>
+                    <label>Uw bericht: <textarea class="form-textveld" name="message"
+                            placeholder="Uw bericht"></textarea></label>
+                </p>
+                <p>
+                    <button type="submit">Verstuur</button>
+                </p>
+            </form>
         </div>
     </main>
 
